@@ -9,7 +9,7 @@ services:
     container_name: rabbitmq
     hostname: rabbitmq
     volumes:
-      - C:/Users/stefa/Documents/Docker/RabbitMQ:/var/lib/rabbitmq/mnesia
+      - {REPLACE THIS WITH YOUR LOCAL PATH}:/var/lib/rabbitmq/mnesia
     environment:
       - RABBITMQ_DEFAULT_USER=rabbitUser
       - RABBITMQ_DEFAULT_PASS=rabbitPass
