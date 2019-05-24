@@ -3,8 +3,9 @@ This project contains data that are needed to build, configure and run an Rabbit
 
 ## How to use
 1. If you don't have the RabbitMQ-Docker-Image run the script **pull-docker-image**
-2. After you downloaded the RabbitMQDocker-Image run the script **run-docker**
-3. If you need the management-ui you can optionaly enable it by opening the terminal inside the docker container and writing: 
+2. Open the docker-compose.yml file in a text editor like nodepad++. Under volume change the path to your desired volume. Change only the part before the : so it looks something like this: C:/Users/user/Documents/Docker/RabbitMQ:/var/lib/rabbitmq/mnesia
+3. After you downloaded the RabbitMQDocker-Image and updated the docker-compose file run the script **run-docker**
+4. If you need the management-ui you can optionaly enable it by opening the terminal inside the docker container and writing: 
 **rabbitmq-plugins enable rabbitmq_management**
 
 ## Opening Management-UI
